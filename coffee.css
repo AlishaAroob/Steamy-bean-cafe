@@ -238,7 +238,22 @@
   width: 90px;
   height: 90px;
   margin-top: 1.5rem;
+  margin-bottom: 10px;
 }
 .product-info {
   display: flex;
+}
+.product-box:hover {
+  background-color: rgb(233, 170, 170);
+  cursor: pointer;
+  transition: all 250ms ease-in;
+  transform: scale(1);
+}
+.product-box h2:hover {
+  color: white;
+}
+
+.product-box img:hover {
+  transition: all 250ms ease-in-out;
+  transform: scale(1.1);
 }
