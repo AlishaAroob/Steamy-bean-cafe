@@ -203,9 +203,9 @@
         <h2>Customer's Reviews</h2>
       </div>
       <!-- swiper -->
-      <div class="swiper myswiper">
-        <div class="swiper-content">
-          <div class="swiper-slide">
+      <div class="slider-container">
+        <div class="slider">
+          <div class="slide">
             <img src="./Assets/review-1.jpg" alt="Err" />
             <h3>Selena ben</h3>
             <p>
@@ -214,7 +214,7 @@
               perfect spot to enjoy a cup with friends."
             </p>
           </div>
-          <div class="swiper-slide">
+          <div class="slide">
             <img src="./Assets/review -2.jpg" alt="Err" />
             <h3>Elena blue</h3>
             <p>
@@ -223,7 +223,7 @@
               welcome whenever I stop by."
             </p>
           </div>
-          <div class="swiper-slide">
+          <div class="slide">
             <img src="./Assets/review-3.jpg" alt="Err" />
             <h3>Jennifer Gomez</h3>
             <p>
@@ -232,9 +232,8 @@
               Definitely recommend trying it out!"
             </p>
           </div>
-          <div class="swiper-button-next"></div>
-          <div class="swiper-button-prev"></div>
-          <div class="swiper-pagination"></div>
+          <div class="prev" onclick="moveSlide(-1)">Previous</div>
+          <div class="next" onclick="moveSlide(1)">Next</div>
         </div>
       </div>
     </section>

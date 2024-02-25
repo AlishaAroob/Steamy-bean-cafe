@@ -25,6 +25,7 @@
   padding: 18px 100px;
   z-index: 1000;
   align-items: center;
+  position: sticky;
 }
 .logo {
   height: 80px;
@@ -332,4 +333,48 @@
   margin: 15px 0px;
   text-align: center;
   font-size: 30px;
+}
+.slide img {
+  width: 100px;
+  height: 100px;
+}
+.slider-container {
+  position: relative;
+  width: 100%;
+  overflow: hidden;
+}
+
+.slider {
+  display: flex;
+  transition: transform 0.5s ease;
+}
+
+.slide {
+  flex: 0 0 auto;
+  width: 100%;
+}
+
+img {
+  width: 100%;
+  height: auto;
+}
+
+.prev,
+.next {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background-color: rgba(0, 0, 0, 0.5);
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  cursor: pointer;
+}
+
+.prev {
+  left: 0;
+}
+
+.next {
+  right: 0;
 }
