@@ -330,7 +330,7 @@
   width: 100%;
 }
 .review-heading {
-  margin-top: 15px;
+  margin: 15px;
   text-align: center;
   font-size: 30px;
 }
@@ -411,7 +411,5 @@
   color: white;
 }
 .slide img:hover {
-  transition: 1s ease-in-out;
   cursor: pointer;
-  transform: scale(1.1);
 }
