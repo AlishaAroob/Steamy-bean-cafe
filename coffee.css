@@ -414,3 +414,8 @@
   cursor: pointer;
 }
 /* contact */
+.contacts h1 {
+  display: block;
+  margin: auto;
+  font-size: 40px;
+}
