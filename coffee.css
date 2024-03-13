@@ -374,7 +374,7 @@
   padding: 2px;
   text-align: center;
 }
-.buttons {
+#buttons {
   display: flex;
   position: absolute;
   justify-content: space-between;
