@@ -380,7 +380,7 @@
   justify-content: space-between;
   width: 30%;
 }
-.prev {
+#prev {
   border-radius: 50%;
   background-color: white;
   color: rgb(37, 31, 22);
@@ -389,7 +389,7 @@
   font-size: 40px;
   font-weight: bold;
 }
-.next {
+#next {
   border-radius: 50%;
   background-color: white;
   color: rgb(37, 31, 22);
@@ -398,13 +398,13 @@
   font-size: 40px;
   font-weight: bold;
 }
-.prev:hover {
+#prev:hover {
   cursor: pointer;
   transition: 1s;
   background-color: black;
   color: white;
 }
-.next:hover {
+#next:hover {
   cursor: pointer;
   transition: 1s;
   background-color: black;
