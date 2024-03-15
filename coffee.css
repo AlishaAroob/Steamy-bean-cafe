@@ -417,11 +417,87 @@
   cursor: pointer;
 }
 /* contact */
-.contacts h1 {
+#contact-us {
   text-align: center;
-  font-size: 50px;
+  font-size: 40px;
+  color: rgb(27, 18, 9);
   height: 400px;
   width: 100%;
   margin-top: 20px;
-  background: beige;
+  padding: 10px;
+  background-color: rgb(155, 130, 97);
+}
+.contacts {
+  display: grid;
+  grid-template-columns: repeat(4, auto);
+  justify-content: space-between;
+  font-size: 15px;
+  color: rgb(27, 18, 9);
+  margin-top: 25px;
+  margin-left: 40px;
+  margin-right: 40px;
+  margin-bottom: 25px;
+  padding: 80px;
+}
+.logo1 {
+  height: 80px;
+  width: 130px;
+  display: flex;
+  justify-content: space-between;
+  align-content: center;
+}
+.logo1:hover {
+  cursor: pointer;
+  /* transition: all 250ms ease-in-out;
+  transform: scale(1.1); */
+}
+.logo1 img {
+  height: 60px;
+  width: 80px;
+}
+.logotext1 {
+  margin-top: 10px 0px;
+  width: 100px;
+  font-size: 15px;
+  padding-top: 15px;
+  text-align: center;
+  padding-left: 5px;
+  padding-right: 5px;
+  font-family: "Bebas Neue", sans-serif;
+  font-weight: 400;
+}
+.logotext1:hover {
+  color: white;
+}
+.logo1 {
+  display: flex;
+  flex-direction: column;
+}
+.contact-box {
+  display: flex;
+  flex-direction: column;
+  margin-top: 10px;
+  margin: 10px;
+}
+.contact-box a {
+  color: rgb(27, 18, 9);
+  font-size: 20px;
+}
+.contact-box a:hover {
+  color: white;
+}
+.contact-box:hover {
+  cursor: pointer;
+  color: white;
+}
+.social {
+  color: rgb(27, 18, 9);
+}
+.footer {
+  background-color: rgb(27, 18, 9);
+  width: 100%;
+}
+.footer-text {
+  color: white;
+  text-align: center;
 }
