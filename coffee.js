@@ -20,3 +20,17 @@ nextt.addEventListener("click", () => {
   console.log("🚀 ~ next.addEventListener ~ slideWidth:", slideWidth);
   slides.forEach((slide) => (slide.style.transform = slideWidth)); // Apply transform to all slides
 });
+
+const burger = document.querySelector("menu-icon");
+const navbar = document.querySelector(".navbar");
+const navbarlist = document.querySelector(".navbarlist");
+const cart = document.querySelector(".bx-cart");
+const search = document.querySelector(".btn");
+
+let burgerr = document.getElementById("menu-icon");
+burgerr.addEventListener("click", () => {
+  navbarlist.classList.toggle("v-res");
+  cart.classList.toggle("v-res");
+  search.classList.toggle("v-res");
+  navbar.classList.toggle("h-res");
+});
