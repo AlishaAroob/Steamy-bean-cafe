@@ -588,6 +588,7 @@
     height: 350px;
     background-color: none;
     flex-direction: column;
+    transition: all 0.3s ease-out;
   }
   .h-res {
     height: 75px;
@@ -907,9 +908,15 @@
     font-size: 15px;
     color: rgb(27, 18, 9);
     margin-top: 25px;
-    margin-left: 10px;
-    margin-right: 10px;
-    padding: 10px;
+    margin-left: 0px;
+    margin-right: 0px;
+    padding: 0px;
+  }
+  .contact-box {
+    display: flex;
+    flex-direction: column;
+    margin-top: 0px;
+    margin: 0px;
   }
 }
 @media (max-width: 460px) {
@@ -922,12 +929,12 @@
     display: grid;
     grid-template-columns: repeat(4, auto);
     justify-content: space-around;
-    font-size: 10px;
+    font-size: 5px;
     color: rgb(27, 18, 9);
     margin-top: 15px;
     margin-left: 0px;
     margin-right: 0px;
-    padding: 5px;
+    padding: 0px;
   }
   .contact-box a {
     color: rgb(27, 18, 9);
@@ -936,7 +943,8 @@
   .contact-box {
     display: flex;
     flex-direction: column;
-    margin-top: 10px;
+    margin-top: 0px;
+    margin: 0px;
   }
   .logo1 {
     height: 60px;
@@ -961,7 +969,10 @@
     font-weight: 400;
   }
   .slider-container {
-    margin: 0px 50px;
+    margin: 0px 30px;
+  }
+  .slide {
+    margin: 10px 10px;
   }
   #contact-us {
     text-align: center;
