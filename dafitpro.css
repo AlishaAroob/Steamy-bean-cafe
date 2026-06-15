@@ -400,6 +400,122 @@ h3 {
   border: 2px solid var(--black);
 }
 
+/* ── HERO PROOF LINE ── */
+.hero__proof {
+  margin-top: 24px;
+  font-family: var(--font-head);
+  font-size: 0.8rem;
+  font-weight: 600;
+  color: var(--text-light);
+  letter-spacing: 0.03em;
+}
+
+/* ── RESULTS ── */
+.results {
+  padding: 100px 24px;
+  background: var(--black);
+}
+.results .section-header { color: var(--white); }
+.results .section-tag { background: var(--yellow); color: var(--black); }
+.results h2 { color: var(--white); }
+.results h2 em { background: var(--yellow); color: var(--black); }
+.results .section-header p { color: rgba(255,255,255,0.6); }
+
+.results__grid {
+  max-width: var(--max-w);
+  margin: 0 auto 48px;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+}
+.result-card {
+  background: rgba(255,255,255,0.06);
+  border: 1px solid rgba(255,255,255,0.1);
+  border-radius: var(--radius-lg);
+  padding: 28px 24px;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  transition: transform 0.2s, box-shadow 0.2s;
+}
+.result-card:hover { transform: translateY(-4px); box-shadow: 0 12px 40px rgba(0,0,0,0.4); }
+.result-card--featured {
+  grid-column: span 1;
+  background: rgba(255,229,0,0.08);
+  border-color: var(--yellow);
+}
+.result-card--yellow {
+  background: var(--yellow);
+  border-color: var(--yellow);
+}
+.result-card--yellow p, .result-card--yellow .result-card__time { color: var(--black-soft); }
+.result-card--yellow .result-before, .result-card--yellow .result-after { color: var(--black); }
+.result-card--yellow .result-arrow { color: var(--black); }
+.result-card--yellow .result-card__tag { background: var(--black); color: var(--yellow); }
+
+.result-card__numbers {
+  display: flex;
+  align-items: baseline;
+  gap: 10px;
+}
+.result-before {
+  font-family: var(--font-head);
+  font-weight: 900;
+  font-size: 2rem;
+  color: rgba(255,255,255,0.5);
+  line-height: 1;
+}
+.result-before small, .result-after small { font-size: 1rem; font-weight: 700; }
+.result-arrow {
+  font-size: 1.4rem;
+  color: var(--yellow);
+  font-weight: 900;
+}
+.result-after {
+  font-family: var(--font-head);
+  font-weight: 900;
+  font-size: 2rem;
+  color: var(--yellow);
+  line-height: 1;
+}
+.result-card__tag {
+  display: inline-block;
+  background: var(--yellow);
+  color: var(--black);
+  font-family: var(--font-head);
+  font-weight: 700;
+  font-size: 0.75rem;
+  padding: 4px 12px;
+  border-radius: 100px;
+  width: fit-content;
+}
+.result-card p {
+  color: rgba(255,255,255,0.75);
+  font-size: 0.9rem;
+  line-height: 1.6;
+  font-style: italic;
+  flex-grow: 1;
+}
+.result-card__time {
+  font-family: var(--font-head);
+  font-size: 0.75rem;
+  font-weight: 600;
+  color: rgba(255,255,255,0.4);
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+}
+
+.results__cta {
+  text-align: center;
+}
+.results__cta p {
+  font-family: var(--font-head);
+  font-weight: 600;
+  color: rgba(255,255,255,0.7);
+  margin-bottom: 20px;
+  font-size: 1.05rem;
+}
+
 /* ── SERVICES ── */
 .services {
   padding: 100px 24px;
@@ -514,7 +630,7 @@ h3 {
   max-width: var(--max-w);
   margin: 0 auto;
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-columns: repeat(3, 1fr);
   gap: 24px;
   align-items: start;
 }
@@ -532,6 +648,15 @@ h3 {
   border-color: var(--black);
   box-shadow: 5px 5px 0 var(--black);
 }
+.testimonial-card--yellow {
+  background: var(--yellow);
+  border-color: var(--black);
+  box-shadow: 5px 5px 0 var(--black);
+}
+.testimonial-card--yellow p { color: var(--black); font-style: italic; }
+.testimonial-card--yellow .testimonial-card__stars { color: var(--black); }
+.testimonial-card--yellow .author-avatar { background: var(--black); color: var(--yellow); }
+.testimonial-card--yellow .testimonial-card__author span { color: var(--black-soft); }
 .testimonial-card__stars { font-size: 1rem; color: var(--black); letter-spacing: 2px; }
 .testimonial-card p {
   font-size: 1rem;
@@ -746,6 +871,8 @@ h3 {
   }
   .hero__actions { justify-content: center; }
   .hero__badge { order: -1; }
+
+  .results__grid { grid-template-columns: 1fr; }
 
   .about__inner { grid-template-columns: 1fr; gap: 60px; }
   .about__text { padding-right: 0; }
